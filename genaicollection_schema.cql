@@ -34,4 +34,3 @@ CREATE CUSTOM INDEX genaicollection_query_null_values ON default_keyspace.genaic
 CREATE CUSTOM INDEX genaicollection_query_text_values ON default_keyspace.genaicollection (entries(query_text_values)) USING 'StorageAttachedIndex';
 CREATE CUSTOM INDEX genaicollection_query_timestamp_values ON default_keyspace.genaicollection (entries(query_timestamp_values)) USING 'StorageAttachedIndex';
 CREATE CUSTOM INDEX genaicollection_query_vector_value ON default_keyspace.genaicollection (query_vector_value) USING 'StorageAttachedIndex' WITH OPTIONS = {'similarity_function': 'cosine', 'source_model': 'OTHER'};
-
